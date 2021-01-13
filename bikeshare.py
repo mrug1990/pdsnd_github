@@ -146,7 +146,7 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     """display total travel time"""
-    total_trip = df['Trip Duration'].sum().sum()
+    total_trip = df['Trip Duration'].sum()
 
     years = total_trip // 31536000
     months = (total_trip % 31536000) // 2628000
